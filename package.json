@@ -1,0 +1,11 @@
+{
+  "name": "goblin",
+  "version": "1.0.0",
+  "main": "nodeindex.js",
+  "scripts": {
+    "start": "node nodeindex.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
