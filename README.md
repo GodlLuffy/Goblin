@@ -1,16 +1,19 @@
-## Hi there 👋
+# 🕹️ Goblin
 
-     <!--  
-**GodlLuffy/GodlLuffy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Goblin is a lightweight **Node.js + Express web project** designed for fast deployment and experimentation.  
+It combines **HTML, CSS, and JavaScript** with a simple backend to serve static assets and handle routes — perfect for gaming sites, creative experiments, or learning web deployment.
 
-Here are some ideas to get you started:
+🌐 Live Demo: [Goblin on Railway](https://goblin-production-1e43.up.railway.app/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## ✨ Features
+- ⚡ **Fast setup** with Node.js and Express
+- 🎨 **Custom front-end** using HTML, CSS, and JS
+- 📦 **Modular structure** for easy extension
+- 🚀 **Ready for deployment** on Railway, Vercel, or any Node hosting
+- 🔒 `.gitignore` configured to keep dependencies clean
+
+---
+
+## 📂 Project Structure
