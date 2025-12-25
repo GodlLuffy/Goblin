@@ -1,0 +1,14 @@
+{
+  "name": "goblin",
+  "version": "1.0.0",
+  "description": "Goblin static site",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --open=./index.html"
+  },
+  "author": "GodlLuffy",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
