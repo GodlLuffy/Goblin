@@ -9,6 +9,16 @@ app.use(express.json());
 
 app.get('/health', (req, res) => res.json({status: 'ok'}));
 
+app.get('/db-check', async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT 1 as ok');
+    res.json({ok: rows[0].ok === 1});
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ok: false, error: err.message});
+  }
+});
+
 app.get('/contacts', async (req, res) => {
   try {
     const [rows] = await db.query('SELECT id, name, email, message, created_at FROM contacts ORDER BY created_at DESC');
