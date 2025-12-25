@@ -1,0 +1,5 @@
+[phases.install]
+cmds = ['npm install cors mysql2 --save-prod']
+
+[phases.start]
+cmds = ['npm start']

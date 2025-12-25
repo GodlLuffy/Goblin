@@ -4,8 +4,7 @@
   "description": "Goblin static site",
   "main": "index.html",
   "scripts": {
-    "postinstall": "npm install cors mysql2 --save",
-    "start": "live-server --port=8080 --open=./index.html"
+    "start": "npm install cors mysql2 --save && node server.js"
   },
   "author": "GodlLuffy",
   "license": "MIT",
