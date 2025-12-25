@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: goblin_db
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./Backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "3306:3306"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment:
+      - MYSQL_HOST=db
+      - MYSQL_PORT=3306
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=goblin_db
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+volumes:
+  db_data:
