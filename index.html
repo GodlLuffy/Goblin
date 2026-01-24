@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- iOS / Android: improve display on iPad and fullscreen web-apps -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Clash of Clans - Goblin Stats</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/public/img/logo.webp">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">ANUP.S.G</a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#clans">Clans</a></li>
+            <li><a href="#townhall">Town Hall</a></li>
+            <li><a href="#troops">Troops</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/l_l_anup__07/" class="social-icon"><i class="ri-instagram-line"></i></a>
+            <a href="https://www.youtube.com/@ClashOfClans" class="social-icon"><i class="ri-youtube-line"></i></a>
+            <a href="https://github.com/GodlLuffy" class="social-icon"><i class="ri-github-line"></i></a>
+            <a href="https://bsky.app/profile/godlluffy.bsky.social" class="social-icon"><i class="ri-bluesky-line"></i></a>
+        </div>
+        <div class="hero-text">
+            <h5>#2 Trending</h5>
+            <h4>Lead Supercell</h4>
+            <h1>GOBLINS</h1>
+            <p>Welcome to my Clash of Clans stats website! I'm Anup, and I'm here to help you explore the world of Goblins. <br> Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan Wars!</p>
+            <div class="hero-btns">
+                <a href="#" class="btn">Compare Stats</a>
+                <a href="https://www.youtube.com/watch?v=ZdOkHJjLP2Q" class="btn2" id="watchGameplay"><i class="ri-play-large-fill"></i>Watch Gameplay</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <!-- <img src="/public/img/goblins-png-8.png" alt="Goblin Character"> -->
+             <img src="img/goblins-png-8.png" alt="Goblin Character">
+             <!-- <link rel="icon" href="img/logo.webp"> -->
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZdOkHJjLP2Q" title="Goblin Gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats" id="about">
+        <div class="section-title">
+            <h2 style="color: rgb(39, 112, 39);">About Goblins</h2>
+            <p>Discover the unique characteristics and abilities of these sneaky warriors</p>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Overview</h3>
+                    <p>Goblins are sneaky, fast-moving troops that excel at raiding resources. They are particularly effective against resource buildings and can quickly gather loot from your enemies.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="ri-sword-line"></i>
+                            <h4>Combat Style</h4>
+                            <p>Melee attacker with high damage per second</p>
+                        </div>
+                        <div class="feature">
+                            <i class="ri-shield-star-line"></i>
+                            <h4>Special Ability</h4>
+                            <p>Prioritizes resource buildings</p>
+                        </div>
+                        <div class="feature">
+                            <i class="ri-run-line"></i>
+                            <h4>Movement</h4>
+                            <p>Fast speed with quick attack animation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <h3>Base Stats</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>Damage</h4>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 85%"></div>
+                            </div>
+                            <span class="stat-value">85/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Speed</h4>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="stat-value">90/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Health</h4>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="stat-value">75/100</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Training Time</h4>
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 95%"></div>
+                            </div>
+                            <span class="stat-value">30s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-timeline">
+                    <h3>Evolution Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Level 1</h4>
+                                <p>Basic goblin with standard stats</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Level 3</h4>
+                                <p>Improved damage and speed</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Level 5</h4>
+                                <p>Enhanced health and attack speed</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h4>Level 7</h4>
+                                <p>Maximum level with peak performance</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>Damage</h3>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <h3>Speed</h3>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <h3>Health</h3>
+                <div class="stat-bar">
+                    <div class="stat-fill" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clans" id="clans">
+        <div class="section-title">
+            <h2>Top Clans</h2>
+            <p>Join the most powerful clans in the game</p>
+        </div>
+        
+        <div class="clans-container">
+            <div class="clan-card">
+                <div class="clan-banner">
+                    <img src="/img/Dragon Warriors.png" alt="Dragon Warriors Banner" height="10px" width="10px">
+                    <div class="clan-level">Level 10</div>
+                </div>
+                <div class="clan-info">
+                    <h3>Dragon Warriors</h3>
+                    <div class="clan-stats">
+                        <span><i class="ri-trophy-line"></i> 50000</span>
+                        <span><i class="ri-user-line"></i> 50/50</span>
+                        <span><i class="ri-medal-line"></i> #1</span>
+                    </div>
+                    <p>Undefeated in Clan Wars for 3 months</p>
+                    <a href="https://supercell.com/en/news/squadbusters-transformers/" class="btn">Join Clan</a>
+                </div>
+            </div>
+
+            <div class="clan-card">
+                <div class="clan-banner">
+                    <img src="/img/Phoenix Rising 1.webp"Phoenix Rising Banner">
+                    <div class="clan-level">Level 9</div>
+                </div>
+                <div class="clan-info">
+                    <h3>Phoenix Rising</h3>
+                    <div class="clan-stats">
+                        <span><i class="ri-trophy-line"></i> 45000</span>
+                        <span><i class="ri-user-line"></i> 48/50</span>
+                        <span><i class="ri-medal-line"></i> #2</span>
+                    </div>
+                    <p>Active daily, friendly community</p>
+                    <a href="https://supercell.com/en/news/squad-busters-goes-global/" class="btn">Join Clan</a>
+                </div>
+            </div>
+
+            <div class="clan-card">
+                <div class="clan-banner">
+                    <img src="/img/Shadow Warriors.png" alt="Shadow Warriors Banner" height="10px" width="10px">
+                    <div class="clan-level">Level 8</div>
+                </div>
+                <div class="clan-info">
+                    <h3>Shadow Warriors</h3>
+                    <div class="clan-stats">
+                        <span><i class="ri-trophy-line"></i> 45000</span>
+                        <span><i class="ri-user-line"></i> 47/50</span>
+                        <span><i class="ri-medal-line"></i> #3</span>
+                    </div>
+                    <p>Elite war clan with strategic gameplay. Regular wars, friendly challenges, and active donations.</p>
+                    <a href="https://supercell.com/en/" class="btn">Join Clan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="townhall" id="townhall">
+        <div class="section-title">
+            <h2 style="color: rgb(39, 112, 39);">Town Hall Levels</h2>
+            <p>Progress through different Town Hall levels</p>
+        </div>
+        <div class="townhall-container">
+            <div class="townhall-card">
+                <div class="townhall-level">
+                    <span class="level-number">TH14</span>
+                    <div class="level-image">
+                        <img src="/img/Maximum Level tone.png" alt="Town Hall 14">
+                    </div>
+                </div>
+                <div class="townhall-info">
+                    <h3>Maximum Level</h3>
+                    <div class="townhall-stats">
+                        <span><i class="ri-shield-star-line"></i> 1000 HP</span>
+                        <span><i class="ri-building-line"></i> 4x4</span>
+                        <span><i class="ri-coins-line"></i> 8M</span>
+                    </div>
+                    <p>Latest Town Hall with powerful defenses</p>
+                    <a href="https://supercell.com/en/" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="townhall-card">
+                <div class="townhall-level">
+                    <span class="level-number">TH13</span>
+                    <div class="level-image">
+                        <img src="/img/hight level toun.png" alt="Town Hall 13">
+                    </div>
+                </div>
+                <div class="townhall-info">
+                    <h3>Advanced Level</h3>
+                    <div class="townhall-stats">
+                        <span><i class="ri-shield-star-line"></i> 900 HP</span>
+                        <span><i class="ri-building-line"></i> 4x4</span>
+                        <span><i class="ri-coins-line"></i> 7M</span>
+                    </div>
+                    <p>Strong defenses and powerful troops</p>
+                    <a href="https://supercell.com/en/news/clashroyale-michaelbolton/" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="townhall-card">
+                <div class="townhall-level">
+                    <span class="level-number">TH12</span>
+                    <div class="level-image">
+                        <img src="/img/mind level.png" alt="Town Hall 12">
+                    </div>
+                </div>
+                <div class="townhall-info">
+                    <h3>Mid Level</h3>
+                    <div class="townhall-stats">
+                        <span><i class="ri-shield-star-line"></i> 800 HP</span>
+                        <span><i class="ri-building-line"></i> 4x4</span>
+                        <span><i class="ri-coins-line"></i> 6M</span>
+                    </div>
+                    <p>Balanced gameplay experience</p>
+                    <a href="https://supercell.com/en/news/forever-game/" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="troops" id="troops">
+        <div class="section-title">
+            <h2>Troops</h2>
+            <p>Explore different troop types and their abilities</p>
+        </div>
+        <div class="troops-container">
+            <div class="troop-card">
+                <div class="troop-image">
+                    <img src="/img/Barbarian.jpg" alt="Barbarian">
+                    <span class="troop-level">Level 8</span>
+                </div>
+                <div class="troop-info">
+                    <h3>Barbarian</h3>
+                    <div class="troop-cost">
+                        <i class="ri-coins-line"></i>
+                        <span>100 Elixir</span>
+                    </div>
+                    <div class="troop-stats">
+                        <div class="troop-stat">
+                            <i class="ri-sword-line"></i>
+                            <span>Damage: 150</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-heart-pulse-line"></i>
+                            <span>HP: 1000</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-run-line"></i>
+                            <span>Speed: 16</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-time-line"></i>
+                            <span>Training: 20s</span>
+                        </div>
+                    </div>
+                    <p>A fierce warrior that attacks anything in sight. His barbarian rage is able to break through almost any wall.</p>
+                    <a href="https://supercell.com/en/news/brawlstars-toystory/" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="troop-card">
+                <div class="troop-image">
+                    <img src="/img/Archer1.jpg" alt="Archer">
+                    <span class="troop-level">Level 8</span>
+                </div>
+                <div class="troop-info">
+                    <h3>Archer</h3>
+                    <div class="troop-cost">
+                        <i class="ri-coins-line"></i>
+                        <span>150 Elixir</span>
+                    </div>
+                    <div class="troop-stats">
+                        <div class="troop-stat">
+                            <i class="ri-sword-line"></i>
+                            <span>Damage: 120</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-heart-pulse-line"></i>
+                            <span>HP: 400</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-run-line"></i>
+                            <span>Speed: 24</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-time-line"></i>
+                            <span>Training: 25s</span>
+                        </div>
+                    </div>
+                    <p>A quick and nimble ranged attacker. Her arrows can strike from a safe distance.</p>
+                    <a href="https://supercell.com/en/news/id-rewards/" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="troop-card">
+                <div class="troop-image">
+                    <img src="/img/Goblin.1.jpg" alt="Goblin">
+                    <span class="troop-level">Level 8</span>
+                </div>
+                <div class="troop-info">
+                    <h3>Goblin</h3>
+                    <div class="troop-cost">
+                        <i class="ri-coins-line"></i>
+                        <span>50 Elixir</span>
+                    </div>
+                    <div class="troop-stats">
+                        <div class="troop-stat">
+                            <i class="ri-sword-line"></i>
+                            <span>Damage: 100</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-heart-pulse-line"></i>
+                            <span>HP: 300</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-run-line"></i>
+                            <span>Speed: 32</span>
+                        </div>
+                        <div class="troop-stat">
+                            <i class="ri-time-line"></i>
+                            <span>Training: 30s</span>
+                        </div>
+                    </div>
+                    <p>A sneaky attacker that prioritizes resource buildings. His small size makes him hard to hit.</p>
+                    <a href="https://supercell.com/en/news/brawlstars-spongebob/" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2 style="color: rgb(39, 112, 39);">Contact Us</h2>
+            <p>Get in touch with us for any questions or support</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="ri-map-pin-line"></i>
+                    <h3>Location</h3>
+                    <p>India, Maharashtra, Nanded, Degloor - 431717</p>
+                </div>
+                <div class="contact-card">
+                    <i class="ri-mail-line"></i>
+                    <h3>Email</h3>
+                    <p>gundelwaranup119@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="ri-phone-line"></i>
+                    <h3>Phone</h3>
+                    <p>+91 9226408230</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/l_l_anup__07/" class="social-link"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.youtube.com/@ClashOfClans" class="social-link"><i class="ri-youtube-line"></i></a>
+                    <a href="https://github.com/GodlLuffy" class="social-link"><i class="ri-github-line"></i></a>
+                    <a href="https://discord.com/channels/1338106218417229927/1338106218983587873" class="social-link"><i class="ri-discord-line"></i></a>
+                    <a href="https://bsky.app/profile/godlluffy.bsky.social" class="social-link"><i class="ri-bluesky-line"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phone">
+                        <label for="phone">Your Phone</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Clash of Clans Stats. Created by <span class="creator-name">Anup</span></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "goblin",
+  "version": "1.0.0",
+  "description": "Goblin static site",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm install cors mysql2 --save && node server.js"
+  },
+  "author": "GodlLuffy",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mysql2": "^3.16.0"
+  }
+}
